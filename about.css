@@ -209,3 +209,20 @@ body, html {
         margin-left: 0;
     }
 }
+
+.img-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-tag img {
+    width: 25%; /* Increased width */
+    transition: transform 0.3s ease-in-out;
+    margin-left: -10%; /* Adjusts overlap */
+}
+
+.img-tag img:hover {
+    transform: scale(1.3); /* Enlarges image further */
+    z-index: 10; /* Brings hovered image to the front */
+}
